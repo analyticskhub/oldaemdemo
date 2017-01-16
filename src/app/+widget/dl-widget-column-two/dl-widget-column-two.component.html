@@ -1,0 +1,52 @@
+<div class="col-lg-5 col-md-5">
+  <div class="panel panel-default">
+    <div class="panel-heading"><i class="fa fa-info fa-fw"></i> <b>{{ labelTypeTitle}}</b></div>
+    <div class="panel-body">
+      <span class="label label-default">Default</span><br>
+      <span class="label label-info">Experience</span><br>
+      <span *ngIf="labelType.isExtended" class="label label-primary">Extended</span><br>
+      <span *ngIf="labelType.isContentManaged" class="label label-success">Content-Managed</span><br>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading"><i class="fa fa-link fa-fw"></i><b> {{ analyticsTrackTitle }}</b></div>
+    <div class="panel-body">
+      <table class="table table-striped table-bordered .table-responsive">
+        <thead>
+          <tr>
+            <th>Variables</th>
+            <th>Values</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Report-Suite</td>
+            <td>{{ analyticVars.reportsuite }}</td>
+          </tr>
+          <tr>
+            <td>Experience</td>
+            <td>{{ analyticVars.experience }}</td>
+          </tr>
+          <tr>
+            <td>Events</td>
+            <td>{{ analyticVars.events }}</td>
+          </tr>
+          <tr>
+            <td>eVars</td>
+            <td>{{ analyticVars.evars }}</td>
+          </tr>
+          <tr>
+            <td>Props</td>
+            <td>{{ analyticVars.props }}</td>
+          </tr>
+          <tr>
+            <td>Others</td>
+            <td>{{ analyticVars.others }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <a (click)="analyticsDebugger()" class="btn btn-primary pull-right">Debugger</a>
+    </div>
+  </div>
+</div>
+

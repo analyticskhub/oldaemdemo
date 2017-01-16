@@ -1,0 +1,45 @@
+<!-- Sidebar -->
+<div id="sidebar-wrapper">
+  <ul class="sidebar">
+    <li class="sidebar-main">
+      <ng-content></ng-content>
+    </li>
+    <li class="sidebar-title"><span>NAVIGATION</span></li>
+    <li class="sidebar-list">
+      <a [routerLink]="['/home']">Home <span class="menu-icon fa fa-home"></span></a>
+    </li>
+    <li class="sidebar-list">
+      <a [routerLink]="['/pattern']">patterns <span class="menu-icon fa fa-table"></span></a>
+    </li>
+    <li class="sidebar-list">
+      <a [routerLink]="['/about']">about <span class="menu-icon fa fa-table"></span></a>
+    </li>
+    <li class="sidebar-list">
+      <a [routerLink]="['/change-log']">Type2 <span class="menu-icon fa fa-table"></span></a>
+    </li>
+    <li class="sidebar-list">
+      <a [routerLink]="['/pattern', 'prod-view']">Pattern View <span class="menu-icon fa fa-table"></span></a>
+    </li>
+    <li class="sidebar-list">
+      <a [routerLink]="['/pattern', 'faqpage']">Pattern View <span class="menu-icon fa fa-table"></span></a>
+    </li>
+  </ul>
+  <div class="sidebar-footer">
+    <div class="col-xs-4">
+      <a href="https://github.com/ziyasal/rdash-angular2" target="_blank">
+                    Github
+                </a>
+    </div>
+    <div class="col-xs-4">
+      <a href="https://github.com/ziyasal/rdash-angular2/blob/master/README.md" target="_blank">
+                    About
+                </a>
+    </div>
+    <div class="col-xs-4">
+      <a href="javascript:void(0)">
+                    Support
+                </a>
+    </div>
+  </div>
+</div>
+<!-- End Sidebar -->
